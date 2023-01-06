@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Complete seu Cadastro</h3>
+    <form action="http://127.0.0.1:5500/html/aula5/exeAula5.html">
+        <label for="date">
+            <p>Data de nascimento
+                <input type="date" name="date" id="date">
+            </p>
+        </label>
+        <label for="Foto">
+            <p>Foto
+                <input type="file" name="Foto" id="Foto">
+            </p>
+        </label>
+        <label for="browsers">
+            <input placeholder="browsers" list="browsers">
+            <datalist id="browsers">
+            <option value="Brasil">
+            <option value="Mexico">
+            <option value="Angola">
+            <option value="Argentina">
+            <option value="Uruguai">
+           </datalist>
+        </label>
+        <label for="sexo">
+            <p>Genero:
+                <span>F</span><input type="radio" name="sexo" id="se" value="F">
+                <span>M</span><input type="radio" name="sexo" id="sex" value="M">
+            </p>
+        </label>
+
+        <h4>Sua principal qualidade</h4>
+        <div style="display: flex; justify-content: space-between;">
+            <label for="qualidade">    
+                <p>Inteligencia
+                    <input type="checkbox"  id="qualidade">
+                </p>
+            </label>
+            <label for="qualidade2">
+                <p>Resiliencia
+                    <input type="checkbox" id="qualidade2">
+                </p>
+            </label>
+            <label for="qualidade3">
+                <p>Preparo Fisico
+                    <input type="checkbox"  id="qualidade3">
+                </p>
+            </label>
+        </div>
+            <label for="text">
+                <textarea name="text" placeholder="Porque você gostaria de fazer parte da equipe ?" id="text" cols="30" rows="10"></textarea>
+            </label>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+</body>
+</html>
